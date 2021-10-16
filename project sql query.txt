@@ -1,0 +1,33 @@
+create database Cricket_management 
+
+use Cricket_management
+
+
+create table countries
+(
+
+country_id int primary key not null,
+country_name varchar(50),
+country_desc varchar(50)
+);
+create table teams
+(
+team_id int primary key not null,
+team_name varchar(50),
+country_id int  foreign key references countries(country_id)
+);
+create table teams
+(
+team_id int primary key not null,
+team_name varchar(50),
+country_id int  foreign key references countries(country_id)
+);
+
+create table matches
+(
+match_id int primary key not null,
+team_1 varchar(50),
+team_2 varchar(50),
+date_of_match varchar(255),
+stadium_name varchar(50)
+);

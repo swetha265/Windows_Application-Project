@@ -1,0 +1,10 @@
+
+CRICKET MANAGEMENT- DATABASE NAME
+
+countries- country id(P.K), country name, country desc
+
+players- player id(P.K), player name, age,role,team id(F.K)
+
+teams- team id(P.K), players,captain of the team, country id(F.K)
+
+matches- first team country id, second team country id, date of the match and time, stadium.
